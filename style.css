@@ -9,7 +9,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
     --header-font-size: clamp(1.1rem, 3vw, 1.4rem);
 }
 
@@ -21,7 +20,15 @@ body{
     align-items: center;
     justify-content: center;
     position: relative;
+    background-color: #c7ddcc;
 }
+
+h1{
+    text-align: center;
+    margin: 10px auto 10px auto;
+}
+
+
 
 .header-container{
     display: flex;
@@ -31,8 +38,9 @@ body{
     font-size: var(--header-font-size);
     min-height: 1.1rem;
     width: 100vw;
-    background-color: beige;
     font-family: 'Roboto';
+    background: linear-gradient(to right, #ffe26a,#c7ddcc, #abd699);
+
 
 }
 
@@ -41,7 +49,7 @@ body{
     height: 100%;
     grid-auto-flow: column;
     grid-template-columns: repeat(3, 1fr);
-    width: min(95%, 1350px);
+    width: min(95%, 1000px);
     justify-content: center;
     align-items: center;
 }
@@ -55,22 +63,53 @@ body{
     text-align: end;
     justify-content: end;
     align-items: center;
+
 }
 
 .mbutton{
     display: flex;
-    background-color: darkblue;
-    color: white;
-    border-radius: 5%;
+    background-color: white;
+    border-radius: 15%;
+    height: 1.3rem;
+    width: 1.3rem;
+    background-color: aliceblue;
 }
 
-.main1-container{
-    width: 100vw;
+.main-container{
+    width: min(100vw, 1000px);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: calc(90vh - 3rem);
+    overflow: hidden;
 }
 
-.main1{
+.main{
     width: min(95%, 80ch);
+    height: calc(50vh - 3rem);
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.landing{
+    width: 50vw;
+    object-fit: cover;
+    height: 100%
+}
+
+
+.text{
+    align-self: center;
+}
+
+@media (max-width: 750px){
+    .main-container{
+        flex-direction: column;
+    }
+    .landing{
+        width: 100%;
+        height: calc(60vh - 3rem);
+    }
 }
