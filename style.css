@@ -7,6 +7,7 @@
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
+    border: 1px solid black;
     box-sizing: border-box;
     --header-font-size: clamp(1.1rem, 3vw, 1.3rem);
     --heading-font-size: clamp(1.5rem, 5vw, 1.7rem);
@@ -68,9 +69,12 @@ p{
     align-items: center;
 }
 
-.logo{
-    text-align: center;
+.logo>img{
+    object-fit: contain;
+    height: 100%;
+    scale: 1.5;
 }
+
 
 .menu{
     display: flex;

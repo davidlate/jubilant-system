@@ -7,8 +7,8 @@ window.addEventListener('scroll', () =>{
     let newScale = 1-pos*.001;
 
     
-    if (newHeight < 26) newHeight = 26;
-    if (newScale < 0.85) newScale = 0.85;
+    if (newHeight < 30) newHeight = 30;
+    if (newScale < 0.8) newScale = 0.8;
 
     header.style.height= `${newHeight}px`;
     upper.forEach(div => {
