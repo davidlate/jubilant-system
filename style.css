@@ -7,7 +7,7 @@
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     box-sizing: border-box;
     --header-font-size: clamp(1.1rem, 3vw, 1.3rem);
     --heading-font-size: clamp(1.5rem, 5vw, 1.7rem);
@@ -41,6 +41,8 @@ p{
 }
 
 
+
+
 .header-container{
     position: sticky;
     top: 0rem;
@@ -60,6 +62,7 @@ p{
 }
 
 .header{
+    position: relative;
     display: grid;
     height: 100%;
     grid-auto-flow: column;
@@ -151,11 +154,29 @@ p{
 }
 
 
-
+.caption, .caption>*{
+    font-size: 0.8rem;
+    font-style: italic;
+    color: rgb(120, 120, 120);
+    text-align: center;
+}
 
 .text{
     align-self: center;
 }
+
+.menu-page{
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    background-color: #abd699;
+}
+
+.menu-page> ul{
+    list-style-type: none;
+}
+
+
 
 @media (max-width: 750px){
     .main-container{
